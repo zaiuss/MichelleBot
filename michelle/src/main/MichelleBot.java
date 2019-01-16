@@ -63,7 +63,7 @@ public class MichelleBot extends TelegramLongPollingBot {
 		}
 	}
 
-	private String ejecutar(String cmd) {
+	private String execCmd(String cmd) {
 		Process process;
 		String strOut = "";
 		try {
@@ -81,7 +81,7 @@ public class MichelleBot extends TelegramLongPollingBot {
 	}
 
 	public String sendCDM(String s) {
-		String salida = ejecutar(s);
+		String salida = execCmd(s);
 		return salida;
 	}
 
